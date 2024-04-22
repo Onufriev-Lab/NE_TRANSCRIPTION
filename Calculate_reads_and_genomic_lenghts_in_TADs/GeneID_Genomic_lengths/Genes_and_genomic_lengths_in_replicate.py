@@ -1,2 +1,0 @@
-#Creating a list of genes and their genomic lengths which are in the replicate
-import pandasdf = pandas.read_csv("GSM3449348_RNA_LacZ_rep1.txt", sep="\t" ,names=["GeneID", "Reads"])df2 = pandas.read_csv("all_gene_genomic_length_5_12.txt", sep="\t", names=["GeneID", "Length"])value=df2[df2.GeneID.isin(df.GeneID)]value.to_csv('GeneID_genomic_length_in_replicate.txt', sep='\t', index=None) 
